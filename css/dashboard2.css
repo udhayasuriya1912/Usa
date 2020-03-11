@@ -1,0 +1,293 @@
+
+#dashboard2{
+	margin:0px;
+	padding:0px;
+	
+}
+@media (max-width:769px){
+.menu{
+	display:none;
+}
+.ba1 {
+		display:block;
+	}
+}
+
+@media (min-width:769px){
+
+  .ba1 {
+		display:none;
+	}
+}
+.section-1{
+	background-color: #385ECE;
+
+}
+.menu{
+	
+	background-color: #385ECE;
+	
+	width:100%;
+}
+.logo{
+	background-color: #385ECE;
+}
+.dashboard{
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	color:white;
+}
+.menu-sec1{
+	border-bottom:1px solid white;
+	color:#B4C3EF;
+}
+.menu-sec1 span{
+	float:right;
+}
+.menu-sec1 a{
+	color:#DAE1F8;
+
+}
+.menu-sec1 a i{
+	color:#A1B4EC;
+}
+.menu-sec2{
+border-bottom:1px solid white;
+color:#B4C3EF;
+}
+.menu-sec2 span{
+	float:right;
+}
+.menu-sec2 a i{
+color:#A1B4EC;
+}
+.menu-sec2 a{
+color:#DAE1F8;	
+}
+
+.menu-sec3 button{
+	border-radius:50px;
+	border:none;
+	outline:none;
+	background-color:#B4C3EF;
+	
+}
+.menu-sec3 .font{
+	
+	width:30%;
+	margin:20px 50px;
+	float:none;
+	border-radius:50%;
+	height:60px;
+
+}
+ .font i{
+ 	font-size:40px;
+ 	float:none;
+	margin:10px 20px;
+	color:white;
+}
+.navigate{
+	
+	background-color:#F8F9FC;
+}
+.navigate .search ul .search-bar{
+	
+	border-radius:10px;
+	margin:10px 0px;
+
+}
+.navigate .search ul .search-bar input{
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border:none;
+	outline:none;
+	background-color:#F8F9FC;
+	padding:8px 0px;
+	padding-right:50px;
+}
+.search-bar button{
+	border-bottom-right-radius:10px;
+	border-top-right-radius:10px;
+	margin-left:-4px;
+	padding:5px 0px;
+	border:none;
+	background-color:#4E73DF;
+	height:35px;
+	color:white;
+	width:30px;
+}
+.account .acc{
+	float:right;
+	padding:20px 0px;
+}
+.account .acc li a i{
+	color: #858796;
+}
+.account .acc li .user{
+	border-left:1px solid #D1D3E2;
+	border-radius:0px;
+}
+.aside{
+	
+}
+.heading{
+
+}
+
+.buttons button{
+	border:none;
+	outline:none;
+	background-color:#4E73DE;
+    color:white;
+    font-weight:600;
+	float:right;
+    padding:5px 5px;
+    box-shadow:2px 2px 2px  gray;
+	margin:20px 0px;
+}
+.section-3{
+
+	padding:40px 10px;
+}
+.section-3 .section-3-1{
+	border:1px solid white;
+	border-left:5px solid black;
+	padding:20px 10px;
+	background-color:white;
+	border-radius:5px;
+
+	
+}
+.section-3 .section-3-1 i{
+	float:right;
+    color:#DDDFEB;
+	font-size:40px;
+}
+.section-3 .section-3-1 h4{
+	font-weight:600;
+}
+.section-3 .section-3-1 .pro{
+	height:10px;
+	width:40%;
+}
+
+.section-4 img{
+	width:100%;
+}
+
+
+.section-5 .section-5-1{
+	
+	margin:30px 0px;
+}
+.section-5 .section-5-1 .section-5-1-1{
+	border:1px solid #E3E6F0;
+	background-color: #F8F9FC;
+}
+.section-5 .section-5-1 .bars{
+	padding:5px 20px;
+}
+.section-5 .section-5-1-1 h4{
+	font-size:20px;
+	
+	color:#7794E6;
+	padding:10px 20px;
+}
+.section-5 .section-5-1-2 {
+	
+	background-color:white;
+}
+.section-5 .section-5-1 .bars h5{
+	float:right;
+}
+.section-5 .section-5-1 .bars .pro1{
+	height:10px;
+}
+.section-5 .section-5-2{
+
+	margin:30px 0px;
+
+	background-color:#F8F9FC;
+}
+.section-5 .section-5-2-1{
+	border:1px solid #E3E6F0;
+}
+.section-5 .section-5-2-1 h4{
+	font-size:20px;
+	color:#7794E6;
+	padding:5px 20px;
+}
+.section-5 .section-5-2-2{
+	padding-bottom:30px;
+}
+.section-5 .section-5-2-2 img{
+	width:100%;
+}
+.section-5 .section-5-2-2 p{
+	line-height:20px;
+	font-size:16px;
+	word-spacing:8px;
+	padding:20px 20px;
+	color:#9092A0; 
+}
+.section-5 .section-5-2-2 p span{
+	color:#7793E6;
+}
+.section-5 .section-5-2-2 a{
+	font-size:16px;
+	padding:0px 20px;
+
+}
+
+
+.section-5 .section-5-3 .section-5-3-1{
+	
+	border-radius:10px;
+	color:white;
+	margin:20px 0px;
+	padding:10px 10px;
+}
+
+.section-5 .section-5-4 .section-5-4-1{
+	border:1px solid #E3E6F0;
+	
+	background-color:#F8F9FC;
+}
+.section-5 .section-5-4 .section-5-4-1 h4{
+	color:#829CE8;
+	padding:0px 20px;
+}
+.section-5 .section-5-4 .section-5-4-2{
+
+	background-color:white;
+	padding:20px 15px;
+}
+.section-5 .section-5-4 .section-5-4-2 p{
+	font-size:16px;
+	padding:0px 10px;
+	color:#858796;
+	line-height:30px;
+}
+
+.footer{
+	
+	padding:20px 0px;
+	margin-top:20px; 
+	background-color:white;
+}
+.footer .footer-1 p{
+	text-align:center;
+	color:#858796;
+	float:auto;
+}
+.footer .new button{
+	float:right;
+	padding:15px 20px;
+	border-radius:10px;
+	border:none;
+	outline:none;
+	background-color: #ACADB4;
+	color:white;
+
+}

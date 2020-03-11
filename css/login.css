@@ -1,0 +1,138 @@
+.loginmain{
+	background-image:url(../images/background1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+	height:100%;
+    padding:50px 20px;
+    overflow:auto;
+}
+.container {
+	border:1px solid black;
+	
+	margin:70px;
+
+	text-align:center;
+}
+.hole{
+	
+}
+.main{
+	
+	border:1px solid white;	
+	float:none;
+	
+	background-color: #dedede;
+
+}
+.name{
+
+	text-align:center;
+	width:100%;
+	border:1px solid none;
+	margin:20px 0px;
+}
+.name p{
+	color:#8898AA;
+}
+
+.name{
+
+	
+}
+.name button{
+	
+	height:40px;
+	background-color:#FFFFFF;
+	font-weight:600;
+	color:#5E72E4;
+	border:1px solid black;
+	box-shadow:0px 2px 4px gray;
+}
+.name button i{
+	margin-right:5px;
+	font-size:18px;
+}
+
+.line {
+	
+	width:100%;
+	margin:30px 0px;
+}
+
+.name2{
+
+	
+	width:100%;
+	float:none;
+	padding-top:30px;
+}
+.name2 p{
+	text-align:center;
+	color:#8898AA;
+}
+
+.input1 {
+text-align:center;
+padding:10px 0px;
+margin:0px 20px;
+background-color:white;
+border-radius: 5px;
+}
+.input1 input{
+	width:80%;
+position: relative;
+	border:none;
+	outline:none;
+
+}
+
+
+.input2 {
+	
+	text-align:center;
+padding:10px 0px;
+margin:10px 20px;
+background-color:white;
+border-radius: 5px;
+}
+.input2 input{
+	border:none;
+	outline:none;
+	width:80%;
+}
+
+.remember {
+	margin-left:10px;
+	width:30%;
+	text-align:center;
+	color:#8898AA;
+}
+.remember input[type=checkbox]{
+	border:none;
+	width:20px;
+	background-color:white;
+}
+.signin{
+	text-align:center;
+	padding:30px 0px;
+}
+.signin button{
+	border:none;
+	padding:10px 15px;
+	background-color:#5E72E4;
+	color:white;
+	border-radius:10px;
+}
+.last a{
+	
+text-decoration:none;
+color:#1001f49e;
+font-weight:600;
+}
+.last a:hover{
+	
+text-decoration:none;
+color:red;
+font-weight:600;
+}

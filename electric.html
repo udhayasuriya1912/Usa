@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="css/electric.css" type="text/css">
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      	
+$(document).ready(function() {
+    var max_fields      = 100; 
+    var wrapper         = $(".list"); 
+    var add_button      = $(".add"); 
+
+    var x = 1; 
+    $(add_button).click(function(){ 
+        
+        if(x < max_fields){ 
+            x++; 
+           $(wrapper).append(' <div class="container"><div class="row"><div class="all" ><div class="col-md-2"><input type="text" name="name[]"  /></div><div class="col-md-2 value"><input type="text" name="value[]" class="value calc" /></div><div class="col-md-2 quantity"><input type="text" name="quantity[]" class="quantity calc"/></div><div class="col-md-2 total"><input type="text" name="total[]" readonly /></div><div class="col-md-2 total"><input type="text" name="tax[]" readonly /></div><button class=" btn btn-danger remove_field">X</button></div></div></div>');
+        }
+    });
+
+    $(wrapper).on("click",".remove_field", function(){ 
+         $(this).parent('div').remove(); x--;
+    });
+     $(wrapper).on("keyup",".calc", function(){
+        var one;
+        var two;
+        var total= [];
+        var percentage = [];
+        var alltotal = '';
+       
+        console.log('tr');
+       $('input[name="name[]"]').each(function(i,v){ 
+       
+       		total[i] = parseFloat($($('input[name="value[]"]')[i]).val()) *parseFloat($($('input[name="quantity[]"]')[i]).val());
+             $($('input[name="total[]"]')[i]).val(total[i]);    
+              var a= total.reduce((a,b) => a + b, 0)
+	          $('.total').val(a);
+
+
+                  percentage[i]= (total[i] * 12/100);
+                  console.log(percentage);
+                $($('input[name="tax[]"]')[i]).val(percentage[i]);  
+              var b=  percentage.reduce((a,b) => a + b, 0)  
+              $('.tax-total').val(b);
+                  
+               alltotal= (a+b);
+                console.log(alltotal);
+                $('.grant-total').val(alltotal);
+      
+
+   		});
+
+    });
+});
+
+
+
+ 
+
+      </script>
+
+</head>
+<body>
+
+<div class=" logo"><h1>PRODUCT LIST</h1></div>
+<div class="list">
+<div class="product">
+<div class="container">
+	<div class="row">
+		
+			<div class="col-md-2">
+			<label>Products Name</label>
+		</div>
+			<div class="col-md-2">
+			<label>value</label></div>
+			<div class="col-md-2">
+			<label>Quantity</label>
+		</div>
+			<div class="col-md-2">
+			<label>Total</label></div>
+			<div class="col-md-2">
+			<label>Tax</label></div>
+			<div class="col-md-2">
+				
+			</div>
+          
+	</div>
+</div>
+</div>
+	<div class="list">
+		<div class="container">
+			<div class="row">
+		 <div class="product">
+			<div class="col-md-2">
+			<input type="text" name="name[]" placeholder="products">
+		</div>
+			<div class="col-md-2">
+			<input type="text" name="value[]" placeholder="value" class="value calc"></div>
+			<div class="col-md-2">
+			<input type="text" name="quantity[]" placeholder="quantity" class="quantity calc"></div>
+			<div class="col-md-2">
+			<input type="text" placeholder="total" name="total[]" readonly="" class="res"></div>
+			<div class="col-md-2">
+			<input type="text" placeholder="tax" name="tax[]" readonly="" class="tax"></div>
+			<div class="col-md-2">
+			<button  name="addnew" value="adddnew" class="btn btn-success  add">Add</button></div>
+
+	</div>
+		</div>
+	</div>
+</div>
+
+<div class="total">
+	<div class="container">
+			<div class="row">
+				
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-2">
+					</div>
+						<div class="col-md-2 but">
+					Total amount	<input type="text" placeholder="total" name="alltotal" readonly="" class="total">
+					</div>
+					<div class="col-md-2">
+					Total tax<input type="text" placeholder="total" name="alltotal" readonly="" class="tax-total">
+				</div>
+				<div class="col-md-2">
+				Grant total<input type="text" placeholder="total" name="alltotal" readonly="" class="grant-total">
+			</div>
+			
+			
+			</div>
+		</div>
+	
+</div>
+
+</div>
+
+
+</body>
+</html>

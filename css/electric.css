@@ -1,0 +1,16 @@
+.list{
+	border:1px solid black;
+}
+.logo{
+	text-align: center;
+}
+.all button{
+	margin:0px 70px;
+
+}
+.product label{
+	text-align:center;
+	margin:10px 10px;
+	font-size:16px;
+	font-weight:0;
+}
